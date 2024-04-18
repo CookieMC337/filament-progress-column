@@ -1,12 +1,12 @@
 <?php
 
-namespace RyanChandler\FilamentProgressColumn\Tests;
+namespace CookieMC337\FilamentProgressColumn\Tests;
 
 use Filament\FilamentServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use RyanChandler\FilamentProgressColumn\FilamentProgressColumnServiceProvider;
+use CookieMC337\FilamentProgressColumn\FilamentProgressColumnServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -15,7 +15,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'RyanChandler\\FilamentProgressColumn\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'CookieMC337\\FilamentProgressColumn\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
