@@ -1,9 +1,9 @@
 # Add a progress bar column to your Filament tables.
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/ryangjchandler/filament-progress-column.svg?style=flat-square)](https://packagist.org/packages/ryangjchandler/filament-progress-column)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/ryangjchandler/filament-progress-column/run-tests?label=tests)](https://github.com/ryangjchandler/filament-progress-column/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/ryangjchandler/filament-progress-column/Check%20&%20fix%20styling?label=code%20style)](https://github.com/ryangjchandler/filament-progress-column/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/ryangjchandler/filament-progress-column.svg?style=flat-square)](https://packagist.org/packages/ryangjchandler/filament-progress-column)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/cookiemc337/filament-progress-column.svg?style=flat-square)](https://packagist.org/packages/cookiemc337/filament-progress-column)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/cookiemc337/filament-progress-column/run-tests?label=tests)](https://github.com/cookiemc337/filament-progress-column/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/cookiemc337/filament-progress-column/Check%20&%20fix%20styling?label=code%20style)](https://github.com/cookiemc337/filament-progress-column/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/ryangjchandler/filament-progress-column.svg?style=flat-square)](https://packagist.org/packages/cookiemc337/filament-progress-column)
 
 This package provides a `ProgessColumn` that can be used to display a progress bar in a Filament table.
 
@@ -12,13 +12,13 @@ This package provides a `ProgessColumn` that can be used to display a progress b
 You can install the package via Composer:
 
 ```bash
-composer require ryangjchandler/filament-progress-column
+composer require cookiemc337/filament-progress-column
 ```
 
 If you're **not** using the `filament/admin` package, you should also add the following line to the top of your CSS:
 
 ```css
-@import '../../vendor/ryangjchandler/filament-progress-column/resources/dist/progress.css'
+@import '../../vendor/cookiemc337/filament-progress-column/resources/dist/progress.css'
 ```
 
 Optionally, you can publish the views using
@@ -32,7 +32,7 @@ php artisan vendor:publish --tag="filament-progress-column-views"
 Add the `ProgressColumn` to your table:
 
 ```php
-use RyanChandler\FilamentProgressColumn\ProgressColumn;
+use CookieMC337\FilamentProgressColumn\ProgressColumn;
 
 protected function getTableColumns(): array
 {
@@ -160,6 +160,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## Credits
 
 - [Ryan Chandler](https://github.com/ryangjchandler)
+- [CookieMC337](https://github.com/CookieMC337).
 - [All Contributors](../../contributors)
 
 ## License
