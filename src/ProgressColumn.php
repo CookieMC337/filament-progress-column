@@ -1,6 +1,6 @@
 <?php
 
-namespace RyanChandler\FilamentProgressColumn;
+namespace CookieMC337\FilamentProgressColumn;
 
 use Closure;
 use Filament\Tables\Columns\Column;
@@ -27,7 +27,7 @@ class ProgressColumn extends Column
         return $this->evaluate($this->color);
     }
 
-    public function progress(Closure $callback): static
+    public function progress(int | Closure $callback): static
     {
         $this->progress = $callback;
 
@@ -42,6 +42,43 @@ class ProgressColumn extends Column
 
         return $this->evaluate($this->progress);
     }
+
+    public function title(string | Closure $callback): static
+    {
+        $this->title = $callback;
+
+        return $this;
+    }
+
+    public function getTitle(): string
+    {
+        return $this->evaluate($this->title);
+    }
+
+    public function usageValue(string | Closure $callback): static
+    {
+        $this->usageValue = $callback;
+
+        return $this;
+    }
+
+    public function getUsageValue(): string
+    {
+        return $this->evaluate($this->usageValue);
+    }
+
+    public function usageValue(string | Closure $callback): static
+    {
+        $this->freeValue = $callback;
+
+        return $this;
+    }
+
+    public function getFreeValue(): string
+    {
+        return $this->evaluate($this->freeValue);
+    }
+
 
     public function poll(string | Closure $duration): static
     {
