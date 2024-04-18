@@ -14,7 +14,7 @@ class ProgressColumn extends Column
     protected ?Closure $progress = null;
 
     protected string | Closure | null $poll = null;
-    
+
     protected string | Closure | null $title = null;
 
     protected string | Closure | null $freeValue = null;
@@ -58,7 +58,7 @@ class ProgressColumn extends Column
         return $this;
     }
 
-    public function getTitle(): string
+    public function getTitle(): ?string
     {
         return $this->evaluate($this->title);
     }
@@ -70,7 +70,7 @@ class ProgressColumn extends Column
         return $this;
     }
 
-    public function getUsageValue(): string
+    public function getUsageValue(): ?string
     {
         return $this->evaluate($this->usageValue);
     }
@@ -82,7 +82,7 @@ class ProgressColumn extends Column
         return $this;
     }
 
-    public function getFreeValue(): string
+    public function getFreeValue(): ?string
     {
         return $this->evaluate($this->freeValue);
     }
