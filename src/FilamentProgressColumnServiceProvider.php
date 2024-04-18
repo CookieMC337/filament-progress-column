@@ -1,6 +1,6 @@
 <?php
 
-namespace RyanChandler\FilamentProgressColumn;
+namespace CookieMC337\FilamentProgressColumn;
 
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
@@ -21,6 +21,6 @@ class FilamentProgressColumnServiceProvider extends PackageServiceProvider
     {
         FilamentAsset::register([
             Css::make('filament-progress-column', __DIR__ . '/../resources/dist/progress.css'),
-        ], 'ryanchandler/filament-progress-column');
+        ], 'cookiemc337/filament-progress-column');
     }
 }
