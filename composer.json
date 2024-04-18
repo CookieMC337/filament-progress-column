@@ -1,17 +1,22 @@
 {
-    "name": "ryangjchandler/filament-progress-column",
+    "name": "cookiemc337/filament-progress-column",
     "description": "Add a progress bar column to your Filament tables.",
     "keywords": [
         "ryangjchandler",
         "laravel",
         "filament-progress-column"
     ],
-    "homepage": "https://github.com/ryangjchandler/filament-progress-column",
+    "homepage": "https://github.com/cookiemc337/filament-progress-column",
     "license": "MIT",
     "authors": [
         {
             "name": "Ryan Chandler",
             "email": "support@ryangjchandler.co.uk",
+            "role": "Developer"
+        },
+        {
+            "name": "Julien Herwig"
+            "email": "info@cookiemc.de"
             "role": "Developer"
         }
     ],
@@ -35,13 +40,13 @@
     },
     "autoload": {
         "psr-4": {
-            "RyanChandler\\FilamentProgressColumn\\": "src",
-            "RyanChandler\\FilamentProgressColumn\\Database\\Factories\\": "database/factories"
+            "CookieMC337\\FilamentProgressColumn\\": "src",
+            "CookieMC337\\FilamentProgressColumn\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RyanChandler\\FilamentProgressColumn\\Tests\\": "tests"
+            "CookieMC337\\FilamentProgressColumn\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -59,10 +64,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "RyanChandler\\FilamentProgressColumn\\FilamentProgressColumnServiceProvider"
+                "CookieMC337\\FilamentProgressColumn\\FilamentProgressColumnServiceProvider"
             ],
             "aliases": {
-                "FilamentProgressColumn": "RyanChandler\\FilamentProgressColumn\\Facades\\FilamentProgressColumn"
+                "FilamentProgressColumn": "CookieMC337\\FilamentProgressColumn\\Facades\\FilamentProgressColumn"
             }
         }
     },
