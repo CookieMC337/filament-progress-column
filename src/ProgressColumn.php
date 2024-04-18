@@ -14,6 +14,14 @@ class ProgressColumn extends Column
     protected ?Closure $progress = null;
 
     protected string | Closure | null $poll = null;
+    
+    protected string | Closure | null $title = null;
+
+    protected string | Closure | null $freeValue = null;
+
+    protected string | Closure | null $usageValue = null;
+
+
 
     public function color(string | Closure $callback): static
     {
@@ -67,7 +75,7 @@ class ProgressColumn extends Column
         return $this->evaluate($this->usageValue);
     }
 
-    public function usageValue(string | Closure $callback): static
+    public function freeValue(string | Closure $callback): static
     {
         $this->freeValue = $callback;
 
