@@ -1,5 +1,5 @@
 <?php
 
-use RyanChandler\FilamentProgressColumn\Tests\TestCase;
+use CookieMC337\FilamentProgressColumn\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
